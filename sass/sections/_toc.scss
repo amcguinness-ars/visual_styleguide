@@ -29,15 +29,31 @@
     li {
         display: inline-block;
         margin: 0.25rem 0;
+        clear: both;
     
-        &:nth-child(1) a {
+        &:nth-child(8n+1) a {
             background: $white;
         }
-        &:nth-child(2) a {
+        &:nth-child(8n+2) a {
             background: $off-white;
         }
-        &:nth-child(3) a {
+        &:nth-child(8n+3) a {
             background: $light-grey;
+        }
+        &:nth-child(8n+4) a {
+            background: $medium-light-grey;
+        }
+        &:nth-child(8n+5) a {
+            background: $medium-grey;
+        }
+        &:nth-child(8n+6) a {
+            background: $medium-dark-grey;
+        }
+        &:nth-child(8n+7) a {
+            background: $dark-grey;
+        }
+        &:nth-child(8n+8) a {
+            background: $red;
         }
     }
     a {
