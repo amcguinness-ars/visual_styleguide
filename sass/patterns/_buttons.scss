@@ -1,0 +1,70 @@
+/**
+ * File: patterns/buttons.scss
+ * Description: Sets up button patterns
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+/* === SIZE === */
+a.large {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+}
+a.small {
+    font-size: 0.6rem;
+    padding: 10px;
+}
+
+/* === COLOR/STYLE === */
+.btn {
+    width: auto;
+    text-decoration: none;
+    font-family: 'Quantico', 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color .3s ease, background .3s ease;
+    -moz-transition: color .3s ease, background .3s ease;
+    -webkit-transition: color .3s ease, background .3s ease;
+}
+a.red-btn {
+    @extend .btn;
+
+    color: $white;
+    background: $red;
+
+    &:hover {
+        background: lighten($red, 10%);
+    }
+}
+a.dark-ghost-btn {
+    @extend .btn;
+
+    color: $dark-grey;
+    background: transparent;
+    border: 2px solid $dark-grey;
+
+    &:hover {
+        background: $dark-grey;
+        color: $white;
+    }
+}
+a.red-ghost-btn {
+    @extend .btn;
+
+    color: $red;
+    background: transparent;
+    border: 2px solid $red;
+
+    &:hover {
+        background: $red;
+        color: $white;
+    }
+}
+
+/* === PLUS SYMBOL === */
+a.plus {
+    &:before {
+        content: '';
+    }
+}

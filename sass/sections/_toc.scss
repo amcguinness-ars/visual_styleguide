@@ -11,7 +11,7 @@
     position: fixed;
     padding: 5rem 0 0 0;
     height: 100%;
-    background: #ccc;
+    background: $medium-light-grey;
     z-index: 90;
 
     h2 {
@@ -30,13 +30,13 @@
         margin: 0.25rem 0;
     
         &:nth-child(1) a {
-            background: #fff;
+            background: $white;
         }
         &:nth-child(2) a {
-            background: #f4f4f4;
+            background: $off-white;
         }
         &:nth-child(3) a {
-            background: #ddd;
+            background: $light-grey;
         }
     }
     a {
@@ -47,8 +47,7 @@
         width: 100%;
         
         &:hover {
-            background: #fff;
-            color: #ec0928;
+            color: $red;
         }
     }
 }

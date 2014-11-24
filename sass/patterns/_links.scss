@@ -8,26 +8,26 @@
 
 a.primary {
     width: auto;
-    color: #ec0928;
+    color: $red;
     text-decoration: none;
     transition: color .3s ease;
     -moz-transition: color .3s ease;
     -webkit-transition: color .3s ease;
 
     &:hover {
-        color: #424242;
+        color: $medium-dark-grey;
     }
 }
 
 a.secondary {
     width: auto;
-    color: #424242;
+    color: $medium-dark-grey;
     text-decoration: none;
     transition: color .3s ease;
     -moz-transition: color .3s ease;
     -webkit-transition: color .3s ease;
 
     &:hover{
-        color: #ec0928;
+        color: $red;
     }
 }

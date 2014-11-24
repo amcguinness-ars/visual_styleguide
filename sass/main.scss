@@ -11,12 +11,14 @@
 @import 'vendor/normalize';
 
 /* === AUTHORED DEPENDENCIES === */
+@import 'modules/colors';
 @import 'modules/defaults';
-@import 'modules/headings';
 @import 'modules/sections';
-@import 'modules/links';
 
 /* === PATTERNS === */
+@import 'patterns/headings';
+@import 'patterns/links';
+@import 'patterns/buttons';
 
 /* === SECTIONS === */
 @import 'sections/intro';
@@ -24,3 +26,4 @@
 @import 'sections/fonts';
 @import 'sections/colors';
 @import 'sections/links';
+@import 'sections/buttons';

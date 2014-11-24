@@ -1,0 +1,20 @@
+/**
+ * File: sections/buttons
+ * Description: Sets the styles for the buttons section
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+#buttons {
+    a {
+        clear: both;
+        margin: 10px 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        float: right;
+    }
+}
