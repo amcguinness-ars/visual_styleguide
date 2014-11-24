@@ -1,0 +1,24 @@
+/**
+ * File: main.scss
+ * Description: The main scss file; will import all other necessary files
+ * Dependencies: Google Fonts Quantico and Squada One
+ *
+ * @package style_guide
+ */
+
+/* === VENDOR DEPENDENCIES === */
+@import url(http://fonts.googleapis.com/css?family=Squada+One|Quantico:400,700,400italic,700italic);
+@import 'vendor/normalize';
+
+/* === AUTHORED DEPENDENCIES === */
+@import 'modules/defaults';
+@import 'modules/headings';
+@import 'modules/sections';
+
+/* === PATTERNS === */
+
+/* === SECTIONS === */
+@import 'sections/intro';
+@import 'sections/toc';
+@import 'sections/fonts';
+@import 'sections/colors';

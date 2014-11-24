@@ -1,0 +1,28 @@
+/**
+ * File: modules/defaults.scss
+ * Description: Sets the defaults for the page
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+* {
+    width: 100%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    font-size: 20px;
+}
+*,
+p {
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 0.6rem;
+    color: #333;
+    line-height: 1;
+    margin: 0;
+}

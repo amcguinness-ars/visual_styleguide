@@ -1,0 +1,17 @@
+/**
+ * File: sections/fonts.scss
+ * Description: Styles for the fonts section
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+#fonts {
+    .disclaimer {
+        font-size: 0.5rem;
+        margin-top: -0.5rem;
+    }
+    .fonts-container {
+        text-align: center;
+    }
+}

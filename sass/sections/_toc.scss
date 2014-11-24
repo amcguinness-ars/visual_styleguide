@@ -1,0 +1,54 @@
+/**
+ * File: sections/toc.scss
+ * Description: Provides the styles for the menu
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+#toc {
+    width: auto;
+    position: fixed;
+    padding: 5rem 0 0 0;
+    height: 100%;
+    background: #ccc;
+    z-index: 90;
+
+    h2 {
+        width: auto;
+        padding: 0 0.5rem;
+    }
+    ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        clear: both;
+    }
+    li {
+        display: inline-block;
+        margin: 0.25rem 0;
+    
+        &:nth-child(1) a {
+            background: #fff;
+        }
+        &:nth-child(2) a {
+            background: #f4f4f4;
+        }
+        &:nth-child(3) a {
+            background: #ddd;
+        }
+    }
+    a {
+        text-align: center;
+        text-decoration: none;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100%;
+        
+        &:hover {
+            background: #fff;
+            color: #ec0928;
+        }
+    }
+}

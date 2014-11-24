@@ -1,0 +1,8 @@
+# File: css/.gitignore
+# Description: Keeps this folder empty, but committed
+# Dependencies: None
+#
+# @package style_guide
+
+# All files here
+*.css

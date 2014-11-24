@@ -1,0 +1,47 @@
+/**
+ * File: modules/headings.scss
+ * Description: Defines all heading styles for the document
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+.heading {
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    @extend .heading
+    font-family: 'Quantico';
+    font-size: 2rem;
+}
+h2 {
+    @extend .heading
+    font-family: 'Quantico';
+    font-size: 1.75rem;
+}
+h3 {
+    @extend .heading
+    font-family: 'Squada One';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+h4 {
+    @extend .heading
+    font-family: 'Squada One';
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+h5 {
+    @extend .heading
+    font-family: 'Quantico';
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+h6 {
+    @extend .heading
+    font-family: 'Squada One';
+    font-size: 0.8rem;
+}
