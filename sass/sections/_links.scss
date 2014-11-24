@@ -1,0 +1,19 @@
+/**
+ * File: sections/links.scss
+ * Description: Sets the styles for the links section
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+#links {
+    a {
+        width: 50%;
+        float: left;
+    }
+    ul {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+}

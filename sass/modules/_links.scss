@@ -1,0 +1,33 @@
+/**
+ * File: modules/links.scss
+ * Description: Sets the link styles for most of the document
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+a.primary {
+    width: auto;
+    color: #ec0928;
+    text-decoration: none;
+    transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+
+    &:hover {
+        color: #424242;
+    }
+}
+
+a.secondary {
+    width: auto;
+    color: #424242;
+    text-decoration: none;
+    transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+
+    &:hover{
+        color: #ec0928;
+    }
+}
