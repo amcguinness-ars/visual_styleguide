@@ -20,28 +20,28 @@
         float: none;
         display: inline-block;
     
-        &:nth-child(2){
+        &.off-white {
             background: $off-white;
         }
-        &:nth-child(3) {
+        &.light-grey {
             background: $light-grey;
         }
-        &:nth-child(4) {
+        &.medium-light-grey {
             background: $medium-light-grey;
         }
-        &:nth-child(5) {
+        &.medium-grey {
             background: $medium-grey;
             color: $off-white;
         }
-        &:nth-child(6) {
+        &.medium-dark-grey {
             background: $medium-dark-grey;
             color: $off-white;
         }
-        &:nth-child(7) {
+        &.dark-grey {
             background: $dark-grey;
             color: $off-white;
         }
-        &:nth-child(8) {
+        &.red {
             background: $red;
             color: $off-white;
         }

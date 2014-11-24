@@ -9,9 +9,12 @@
 /* === VENDOR DEPENDENCIES === */
 @import url(http://fonts.googleapis.com/css?family=Squada+One|Quantico:400,700,400italic,700italic);
 @import 'vendor/normalize';
+@import 'vendor/grid';
 
 /* === AUTHORED DEPENDENCIES === */
 @import 'modules/colors';
+@import 'modules/vars';
+@import 'modules/breakpoints';
 @import 'modules/defaults';
 @import 'modules/sections';
 
@@ -19,6 +22,7 @@
 @import 'patterns/headings';
 @import 'patterns/links';
 @import 'patterns/buttons';
+@import 'patterns/grid';
 
 /* === SECTIONS === */
 @import 'sections/intro';

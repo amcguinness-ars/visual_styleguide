@@ -1,0 +1,110 @@
+/**
+ * File: sections/grid.scss
+ * Description: Contains the styles for the grid
+ * Dependencies: None
+ *
+ * @package sass-test
+ */
+
+/* === Row Styles === */
+.#{$class_row} {
+    @include container;
+    margin: 0 auto;
+    margin-bottom: $gutter_width;
+    background: none;
+}
+
+/* === Column Layouts === */
+@include breakpoint(large) {
+    /* Column Styles */
+    @for $i from 1 through $total_columns {
+        .#{$class_column}#{$i} {
+            @include column($i);
+        }
+    }
+    /* Push Class Styles */
+    @for $i from 0 through $total_columns - 1 {
+        .#{$class_push}#{$i} {
+            @include push($i);
+        }
+    }
+}
+
+
+@include breakpoint(medium) {
+    /* Container Overrides */
+    .#{$class_row} {
+        float: left;
+        height: auto;
+    }
+
+    /* Generic Column Styles */
+    @for $i from 1 through 12 {
+        .#{$class_column}#{$i},
+        .#{$class_column}#{$i + 1} {
+            @if ($i % 2 != 0) {
+                @include column($i + 1);
+            }
+            @else {
+                @include column($i);
+            }
+        }
+
+        .#{$class_push}#{$i},
+        .#{$class_push}#{$i + 1} {
+            @if ($i % 2 != 0) {
+                @include push($i + 1);
+            }
+            @else {
+                @include push($i);
+            }
+        }
+    }
+
+    /* Specific Situations */
+    @for $i from 0 through 7 {
+        .#{$class_column}1:nth-child(#{$i}) {
+            @include push(2 * ($i - 1));
+        }
+    }
+    @for $i from 0 through 7 {
+        .#{$class_column}1:nth-child(#{7 + $i}) {
+            @include push(2 * $i);
+            @if ($i == 0) {
+                clear: both;
+            }
+            margin-top: $gutter_width;
+        }
+    } 
+    
+    .#{$class_column}3:nth-child(3) {
+        @include push(8);
+    }
+    .#{$class_column}3:nth-child(4) {
+        @include column(12);
+        @include push(0);
+        clear: both;
+        margin-top: $gutter_width;
+    }
+}
+@include breakpoint(small) {
+    /* Specific Container Styles */
+    .#{$class_row} {
+        float: left;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    /* All Column and Push Styles */
+    @for $i from 0 through 13 {
+        .#{$class_column}#{$i} {
+            @include column(12);
+            clear: both;
+            margin-top: $gutter_width;
+        }
+        .#{$class_push}#{$i} {
+            @include push(0);
+        }
+    }
+
+}
