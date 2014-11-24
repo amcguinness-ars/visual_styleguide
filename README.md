@@ -6,7 +6,7 @@ Welcome! This README won't explain any of the styles within the styleguide -- it
 
 1. Clone the repo to your machine
 2. `cd` into the directory where you cloned it
-3. Run `grunt` to compile the Sass into vanilla CSS
+3. Run `grunt` to compile the Sass into vanilla CSS (make sure you've got Ruby & Sass installed)
 4. Start MAMP/WAMP/etc.
 5. Navigate to this page
 6. Enjoy!
