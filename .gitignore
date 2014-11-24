@@ -1,0 +1,12 @@
+# File: .gitignore
+# Description: Ignores files within this repo
+# Dependencies: None
+#
+# @package style_guide
+
+# Ignoring all Vim files
+*.swo
+*.swp
+
+# Ignoring installed npm dependencies
+node_modules/
