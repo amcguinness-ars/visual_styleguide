@@ -31,3 +31,10 @@ span {
     float: none;
     width: auto;
 }
+code {
+    background: $light-grey;
+    border: 1px solid $medium-light-grey;
+    padding: 5px;
+    width: auto;
+    clear: both;
+}

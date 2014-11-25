@@ -23,18 +23,20 @@ a.small {
     font-family: 'Quantico', 'Arial', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color .3s ease, background .3s ease;
-    -moz-transition: color .3s ease, background .3s ease;
-    -webkit-transition: color .3s ease, background .3s ease;
+    transition: color .3s ease, background .3s ease, border .3s ease;
+    -moz-transition: color .3s ease, background .3s ease, border .3s ease;
+    -webkit-transition: color .3s ease, background .3s ease, border .3s ease;
 }
 a.red-btn {
     @extend .btn;
 
     color: $white;
     background: $red;
+    border: 2px solid $red;
 
     &:hover {
         background: lighten($red, 10%);
+        border: 2px solid lighten($red, 10%);
     }
 }
 a.dark-ghost-btn {

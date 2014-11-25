@@ -1,0 +1,15 @@
+/**
+ * File: patterns/tables.scss
+ * Description: Styles for the tables in the experience
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+.table-row {
+    border-bottom: 1px solid $medium-light-grey;
+
+    div {
+        padding: 1rem;
+    }
+}
