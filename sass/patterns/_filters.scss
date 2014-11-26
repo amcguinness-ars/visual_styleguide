@@ -1,0 +1,35 @@
+/**
+ * File: patterns/filters.scss
+ * Description: Creates basic styles for the dropdown filters
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+a.filter h5 {
+    color: $medium-grey;
+
+    &:after {
+        font-family: 'test_icons';
+        text-transform: lowercase;
+        content: "\e601";
+        display: block;
+        width: auto;
+        float: right;
+        margin-left: 0.5rem;
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transition: transform .3s ease;
+        -moz-transition: trasnform .3s ease;
+        -webkit-transition: transform .3s ease;
+    }
+    &.active {
+        color: $dark-grey;
+        &:after {
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+    }
+}
