@@ -1,0 +1,45 @@
+/**
+ * File: patters/tabs.scss
+ * Description: Defines styles for tabs
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+.tabs {
+    text-align: center;
+    margin-bottom: 0;
+
+    .tab {
+        background: $medium-grey;
+        padding: 5px;
+
+        h5 {
+            color: $medium-light-grey;
+        }
+        &.active {
+            background: $light-grey;
+
+            h5 {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+.tabs-content {
+    background: $light-grey;
+    padding: 10px;
+    margin-top: -1px;
+    
+    * {
+        color: $dark-grey;
+    }
+
+    > div {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
