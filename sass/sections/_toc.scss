@@ -45,15 +45,19 @@
         }
         &:nth-child(8n+5) a {
             background: $medium-grey;
+            color: $off-white;
         }
         &:nth-child(8n+6) a {
             background: $medium-dark-grey;
+            color: $off-white;
         }
         &:nth-child(8n+7) a {
             background: $dark-grey;
+            color: $off-white;
         }
         &:nth-child(8n+8) a {
             background: $red;
+            color: $off-white;
         }
     }
     a {

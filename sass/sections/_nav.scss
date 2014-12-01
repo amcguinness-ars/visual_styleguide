@@ -1,0 +1,17 @@
+/**
+ * File: sections/nav.scss
+ * Description: Sets the styles for the nav section
+ * Dependencies: None
+ *
+ * @package style_guide
+ */
+
+#nav {
+    .hamburger-icon {
+        &:before {
+            content: "\e602";
+            font-family: 'test_icons';
+            display: block;
+        }
+    }
+}
